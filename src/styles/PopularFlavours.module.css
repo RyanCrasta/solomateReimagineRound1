@@ -1,0 +1,1375 @@
+.popularFlavoursCtn {
+  padding: 4rem 0rem 0rem 0rem;
+  position: relative;
+  z-index: 3;
+}
+
+.popularFlavoursCtn h2 {
+  font-size: 10.68rem;
+  font-family: Cervo;
+  text-transform: uppercase;
+  color: #b00e2f;
+  text-align: center;
+}
+
+.realIceCream {
+  /* width: 100vw; */
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  position: relative;
+  z-index: 2;
+
+  padding: 0 2rem;
+}
+
+.realIceCream > div {
+  width: 24.3%;
+  height: 38rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.realIceCream > div img {
+  width: 100%;
+  height: 45%;
+  object-fit: contain;
+  object-position: center;
+  transition: all 1s ease;
+}
+
+.icecreamImg {
+  scale: 1.1;
+}
+
+.jackfruiticecream {
+  background-color: #acc38a !important;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.coffeeicecream {
+  background-color: #eeb083 !important;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.mangoicecream {
+  transition: all 1s ease;
+  position: relative;
+  background-color: #fed234 !important;
+}
+
+.guavaicecream {
+  transition: all 1s ease;
+  position: relative;
+  background-color: #ffb6c1 !important;
+}
+
+.malaiicecream {
+  transition: all 1s ease;
+  position: relative;
+  background-color: #fffff7 !important;
+}
+
+.orangeicecream {
+  transition: all 1s ease;
+  position: relative;
+  background-color: #ffac1c !important;
+}
+
+.coconuticecream {
+  transition: all 1s ease;
+  position: relative;
+  background-color: #ecffdc !important;
+}
+
+.grapesicecream {
+  transition: all 1s ease;
+  position: relative;
+  background-color: #e0b0ff !important;
+}
+
+.icecream-details {
+  /* height: max-content; */
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  transition: all 1s ease;
+  margin-top: 1rem;
+}
+
+.contentInfo {
+  opacity: 0;
+  object-fit: cover !important;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 1s ease;
+
+  width: 100%;
+  height: 85% !important;
+  z-index: 2;
+}
+
+.lastCtn:hover > .contentInfo {
+  object-fit: cover !important;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.lastCtn {
+  width: 100%;
+  height: 100%;
+  /* ryan */
+  cursor: default;
+}
+
+.jackfruiticecream:hover > .icecreamImg,
+.jackfruiticecream:hover > .icecream-details,
+.coffeeicecream:hover > .icecreamImg,
+.coffeeicecream:hover > .icecream-details,
+.mangoicecream:hover > .icecreamImg,
+.mangoicecream:hover > .icecream-details,
+.malaiicecream:hover > .icecreamImg,
+.malaiicecream:hover > .icecream-details,
+.guavaicecream:hover > .icecreamImg,
+.guavaicecream:hover > .icecream-details,
+.orangeicecream:hover > .icecreamImg,
+.orangeicecream:hover > .icecream-details,
+.coconuticecream:hover > .icecreamImg,
+.coconuticecream:hover > .icecream-details,
+.grapesicecream:hover > .icecreamImg,
+.grapesicecream:hover > .icecream-details {
+  opacity: 0;
+}
+
+.icecream-details div p {
+  font-family: Cervo;
+  text-transform: uppercase;
+  font-size: 1.68rem;
+  color: #b00e2f;
+}
+
+.servingDetails {
+  font-family: HelveticaNeueCyrRoman !important;
+  text-transform: none !important;
+  font-size: 0.93rem !important;
+  color: #000 !important;
+  margin: 0.5rem 0;
+  height: 102px;
+}
+
+.cartImg {
+  /* width: 5rem; */
+  /* height: 5rem; */
+
+  width: 100%;
+  height: 15%;
+
+  /* border-radius: 50%; */
+  background-color: #b00e2f !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  transition: all 0.5s ease;
+
+  /* right: 2rem; */
+  /* bottom: 0.6rem; */
+}
+
+/* .cartImg:hover .dummyCartImg {
+  scale: 1;
+} */
+
+.cartImg:hover {
+  background-color: #900b27 !important;
+}
+
+/* .cartImg:hover svg path {
+  fill: #b00e2f;
+} */
+
+.dummyCartImg {
+  position: absolute;
+  background-color: #fee5ca;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 190%; */
+  scale: 0;
+  transition: all 0.4s ease;
+}
+
+.cartImg svg {
+  width: 30px !important;
+  height: 30px !important;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.topLeftCurve {
+  border-top-left-radius: 2.5rem;
+}
+
+.topRightCurve {
+  border-top-right-radius: 2.5rem;
+}
+
+.bottomLeftCurve {
+  border-bottom-left-radius: 2.5rem;
+}
+
+.bottomRightCurve {
+  border-bottom-right-radius: 2.5rem;
+}
+
+.realIceCream > div:hover {
+  background-color: #fef2e4;
+}
+
+.curve {
+  fill: transparent;
+}
+
+.curveText {
+  fill: #ff9800;
+  background-color: #333;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 35px;
+}
+
+.giftBoxCtn {
+  margin-top: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fee5ca;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 6rem;
+}
+
+/* .giftBoxCtn video {
+  width: 50rem;
+  border-top-right-radius: 25rem;
+  border-top-left-radius: 25rem;
+} */
+
+.textCurve {
+  font-family: Cervo;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 8.12rem;
+  fill: #b00e2f;
+}
+
+/* .outerBtn {
+  width: 12rem;
+  height: 12rem;
+  background-color: #fee5ca;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #b00e2f;
+  top: -5rem;
+  cursor: pointer;
+} */
+
+.outerBtn {
+  width: 12rem;
+  height: 12rem;
+  background-color: #fee5ca;
+  border-radius: 50%;
+  /* position: relative; */
+  border: 1px solid #b00e2f;
+  /* top: -5rem; */
+  cursor: pointer;
+
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  top: unset;
+  transform: translateX(-50%);
+}
+
+.innerBtn {
+  width: 10.5rem;
+  height: 10.5rem;
+  background-color: #b00e2f;
+  border-radius: 50%;
+  position: absolute;
+  /* top: 50%; */
+  /* bottom: 32%; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.innerBtn p {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Cervo;
+  font-size: 1.37rem;
+  position: relative;
+  z-index: 2;
+}
+
+.innerInnerBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #fee5ca;
+  z-index: 1;
+  border-radius: 50%;
+  scale: 0;
+  transition: all 0.3s ease;
+}
+
+.outerBtn:hover .innerInnerBox {
+  scale: 1;
+}
+
+.outerBtn:hover .innerBtn p {
+  color: #b00e2f;
+}
+
+.outerInnerBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #b00e2f;
+  scale: 0;
+  transition: all 0.3s ease;
+}
+
+.outerBtn:hover .outerInnerBox {
+  scale: 1;
+}
+
+.videoTexts {
+  text-transform: uppercase;
+  font-family: Cervo;
+  font-size: 3.12rem;
+  line-height: 3.12rem;
+  color: #b00e2f;
+  width: 40%;
+}
+
+.videoTexts p:first-child {
+  margin-bottom: 2rem;
+}
+
+.partnershipGirl {
+  width: 100%;
+  height: 100%;
+  padding-left: -4rem;
+  /* position: absolute; */
+
+  border: 1px solid lightgray;
+  background-color: lightgray;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partnershipGirl > div {
+  width: 25%;
+  height: 25%;
+  background-color: #13a538;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.branchDetails {
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branchDetails p {
+  color: #fff;
+  background-color: #000;
+  font-family: HelveticaNeueCyrRoman;
+  width: max-content;
+  font-size: 1.5rem;
+  padding: 1rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.branchDetails {
+}
+
+/* .partnershipGirl > div:hover  */
+
+.partnershipGirl > div:hover .branchDetails {
+  backdrop-filter: blur(6px);
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.partnershipGirl > div:hover .branchDetails p {
+  opacity: 1;
+}
+
+.partnershipGirl > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mumbai img {
+  object-position: top;
+}
+
+.kerala img,
+.gujarat {
+  object-fit: initial !important;
+}
+
+.upup img {
+  object-position: top;
+}
+
+/* .partnershipGirl img {
+  position: absolute;
+  width: 100%;
+  top: -60%;
+} */
+
+.dummyDiv {
+  width: 100%;
+  height: 300vh;
+  position: relative;
+  z-index: 2;
+}
+
+.threeDCtn {
+  /* padding: 0 2rem; */
+  margin-top: 2rem;
+}
+
+.threeDCTN h3 {
+  font-family: Cervo;
+  text-align: end;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #13a538;
+}
+
+.postonRelative {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 150vh;
+  /* overflow: hidden; */
+  padding: 0 2rem;
+}
+
+.postonRelative h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-family: Cervo;
+  color: #b00e2f;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.containerThreeD {
+  height: 100%;
+}
+
+.loved {
+  background-color: #000 !important;
+  color: #fff;
+  font-family: Cervo;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loved img {
+  display: none;
+}
+
+.containerThreeD canvas {
+  /* background-color: red; */
+  width: 100% !important;
+  height: 100vh !important;
+  position: sticky;
+  top: 10vh;
+  /* left: 0; */
+}
+
+.justHeight {
+  height: 250vh;
+  background-color: #fbe4ca;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.justHeight img {
+  /* it was 80 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: sticky;
+
+  top: 10vh;
+}
+
+.justHeightTwo {
+  height: 100vh;
+  background-color: lightpink;
+}
+
+.justHeightThree {
+  padding-top: 3rem;
+  height: 85vh;
+  background-color: #b00e2f;
+  width: 100%;
+  position: static;
+  z-index: -10;
+  bottom: 0;
+  /* top: 20vh; */
+}
+
+.justHeightThreeCtn {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.justHeightThree img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.threeDCTN {
+  height: 300vh !important;
+  background-color: #fed234;
+  position: relative;
+  z-index: 2;
+}
+
+.threeDCTN canvas {
+  /* margin-top: 13rem; */
+  width: 100vw !important;
+  height: 100vh !important;
+  position: sticky;
+  top: 10vh;
+}
+
+/* SVG SVG STYLING */
+
+.home__data {
+  width: 50rem;
+  height: 100vh;
+
+  /* height: 58rem; */
+
+  position: relative;
+  /* background-color: pink; */
+}
+
+.home__data svg {
+  position: absolute;
+  /* top: 150px; */
+  left: 50%;
+  transform: translateX(-50%);
+
+  overflow: initial;
+}
+.home__data svg .frame {
+  fill: none;
+  fill-opacity: 1;
+  stroke: #1a1a1a;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+}
+
+.myText {
+  width: 38rem;
+  height: 20rem;
+  background-color: red;
+  font-family: CervoMedium;
+  text-transform: uppercase;
+}
+
+.videoStyle {
+  clip-path: url(#frame-clip);
+  object-fit: cover;
+
+  position: absolute;
+  /* top: 150px; */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 602px;
+  height: 841px;
+}
+
+.mainSVG {
+  fill: #13a538;
+}
+
+.fruitStory {
+  width: 33rem;
+  /* height: 40rem; */
+  height: max-content;
+  background-color: #13a538;
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+  color: #fff;
+  padding: 3rem;
+}
+
+.fruitStory div,
+.milkStory div {
+  overflow: hidden;
+}
+
+.fruitStory h1,
+.milkStory h1,
+.sugarStory h1 {
+  font-family: Cervo;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.fruitStory p,
+.milkStory p,
+.sugarStory p {
+  font-family: HelveticaNeueCyrRoman;
+  font-size: 1.125rem;
+  text-align: justify;
+}
+
+.milkStory {
+  width: 33rem;
+  height: max-content;
+
+  background-color: #13a538;
+  position: absolute;
+  top: 70rem;
+  right: 2rem;
+  color: #fff;
+  padding: 3rem;
+}
+
+.sugarStory {
+  width: 33rem;
+  height: max-content;
+
+  background-color: #13a538;
+  position: absolute;
+  top: 125rem;
+  left: 2rem;
+  color: #fff;
+  padding: 3rem;
+}
+
+.sugarTextCtn {
+  overflow: hidden;
+}
+
+.sugarTextCtn div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sugarTextCtn img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
+}
+
+.scroller {
+  width: 100%;
+  height: max-content;
+  rotate: -5deg;
+}
+
+.marqueeFooter {
+  position: absolute;
+  bottom: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+  width: 100%;
+  z-index: -1;
+  outline: 3px solid lime;
+  background-color: #fbe4ca;
+}
+
+.footerMarquee {
+  width: 100%;
+  height: 100%;
+}
+
+.footerMarquee div {
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-family: Cervo;
+  /* width: max-content; */
+  white-space: nowrap;
+}
+
+.scroller__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  /* gap: 1rem; */
+  width: max-content;
+
+  animation: scroll 20s var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.lastElement {
+  /* margin-right: 2rem; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: transparent;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50%));
+  }
+}
+
+.bannerIframsection {
+  width: 100%;
+  /* height: 130vh; */
+  background-color: #fbe4ca;
+}
+
+.foodDelivery {
+  width: 100%;
+  height: 30vh;
+  /* background-color: #fed234; */
+  margin-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foodDelivery img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition: all 0.2s ease;
+
+  width: 12rem;
+  height: 5rem;
+}
+
+.foodDelivery img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.foodDeliveryCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.foodDeliveryLogoCtn {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.orderNow {
+  font-family: Cervo;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.iframeCtn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 10rem;
+}
+
+.carouselCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.iframeCtn h3 {
+  font-size: 5.68rem;
+  font-family: Cervo;
+  text-transform: uppercase;
+  color: #5ba739;
+  text-align: center;
+}
+
+.carouselCard h3,
+.justHeightThree h3 {
+  font-size: 5.68rem;
+  font-family: Cervo;
+  text-transform: uppercase;
+  color: #5ba739;
+  text-align: center;
+}
+
+.justHeightThree h3 {
+  color: #fff;
+}
+
+.bannerImg {
+  width: 20%;
+  height: 30rem;
+  background-color: pink;
+}
+
+.bannerImg img {
+  width: 100%;
+  height: 100%;
+}
+
+/* CARD CAROUSEL */
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: 0.75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+.cardInput {
+  display: none;
+}
+
+.cardInput:checked + label {
+  width: 69vw;
+}
+
+.cardInput:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url("/public/peach-banner.jpg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.card[for="c2"] {
+  background-image: url("/public/fire-banner.jpg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.card[for="c3"] {
+  background-image: url("/public/coconut-banner.jpg");
+
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.card[for="c4"] {
+  background-image: url("/public/toffee-banner.jpg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+
+.formCtn {
+  /* background-color: pink; */
+  width: 100%;
+  font-family: HelveticaNeueCyrRoman;
+
+  padding: 4rem 2rem 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.formCtn button {
+  width: max-content;
+  padding: 1rem 1.5rem;
+  font-family: HelveticaNeueCyrRoman;
+  font-size: 1.15rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.formCtn button:hover {
+  background-color: #fff;
+  color: #b00e2f;
+}
+
+.formCtn > div {
+  display: flex;
+  flex-direction: column;
+  height: 5.1175rem;
+
+  /* background-color: pink; */
+}
+
+.detailsCustomer {
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.detailsCustomer > div {
+  width: 30%;
+  height: 100%;
+  /* background-color: orange; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.formCtn input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.formCtn label {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.inputDownBorder {
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+
+.labelStyling {
+  height: 2rem;
+  /* background-color: green; */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  /* background-color: lightblue; */
+  width: 100%;
+  height: 5rem;
+  font-family: HelveticaNeueCyrRoman;
+
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.footerItem {
+  cursor: pointer;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 3rem;
+}
+
+.aboutMe a {
+  text-decoration: none;
+  color: #fff;
+
+  border-bottom: 1px solid #fff;
+}
+
+.socialMedia > div {
+  cursor: pointer;
+}
+
+.footerBorder {
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+  transform-origin: center;
+  scale: 0;
+}
+
+@media screen and (max-width: 430px) {
+  .myText {
+    font-size: 100px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+    position: static;
+    height: unset;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+  }
+
+  .socialMedia {
+    gap: 1rem;
+  }
+
+  .formCtn {
+    gap: 1rem;
+  }
+
+  .detailsCustomer {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+
+  .detailsCustomer > div {
+    width: unset;
+  }
+
+  .formCtn > div {
+    height: unset;
+  }
+
+  .justHeightThree {
+    height: unset;
+  }
+
+  .justHeightThree h3 {
+    font-size: 2.5rem;
+  }
+
+  .popularFlavoursCtn h2 {
+    font-size: 4.5rem;
+  }
+
+  .realIceCream {
+    flex-direction: column;
+  }
+
+  .realIceCream > div {
+    width: 100%;
+  }
+
+  .servingDetails {
+    height: unset;
+  }
+
+  .icecream-details div p:last-child {
+    font-size: 1.4rem;
+  }
+
+  .realIceCream {
+    gap: 2rem;
+  }
+
+  .foodDeliveryLogoCtn {
+    flex-direction: column;
+  }
+
+  .videoTexts {
+    width: unset;
+    padding: 0 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .partnershipGirl > div img {
+    width: 100vw;
+  }
+
+  .partnershipGirl > div {
+    width: 90%;
+    height: 100%;
+  }
+
+  .partnershipGirl {
+    flex-wrap: unset;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .postonRelative {
+    height: 30vh;
+  }
+
+  .loved {
+    min-width: 80vw !important;
+    font-size: 3rem;
+  }
+
+  .loved img {
+    position: absolute;
+    width: 3rem !important;
+    height: 3rem !important;
+    right: 0.5rem;
+    transform: rotate(90deg);
+    bottom: 0;
+    display: block;
+  }
+
+  .threeDCTN canvas,
+  .fruitStory,
+  .milkStory,
+  .sugarStory {
+    position: static;
+  }
+
+  .fruitStory,
+  .milkStory,
+  .sugarStory {
+    width: unset;
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  .threeDCTN {
+    padding-top: 2rem;
+    height: unset !important;
+  }
+
+  .fruitStory h1,
+  .milkStory h1,
+  .sugarStory h1 {
+    font-size: 4.8rem;
+  }
+
+  .sugarTextCtn img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .iframeCtn h3,
+  .carouselCard h3 {
+    font-size: 2.6rem;
+  }
+
+  iframe {
+    width: 80%;
+    height: 300px;
+  }
+
+  .card {
+    width: 100%;
+    height: 28.1vw;
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+    height: unset;
+  }
+
+  .cardInput {
+    display: none;
+  }
+
+  .cardInput:checked + label {
+    width: 100%;
+  }
+
+  .card[for="c1"],
+  .card[for="c2"],
+  .card[for="c3"],
+  .card[for="c4"] {
+    background-size: contain;
+  }
+
+  .lastCtn {
+    height: max-content;
+  }
+
+  .justHeight img {
+    height: 26%;
+    width: 100%;
+  }
+
+  .justHeight {
+    height: 180vh;
+    align-items: unset;
+  }
+
+  .videoStyle {
+    clip-path: unset;
+    width: 302px;
+    height: 428px;
+
+    border-top-left-radius: 90rem;
+    border-top-right-radius: 90rem;
+    top: 22.5rem;
+  }
+
+  .innerBtn {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .outerBtn {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    top: unset;
+    transform: translateX(-50%);
+  }
+
+  .mainSVG {
+    width: 302px;
+  }
+
+  .home__data {
+    height: 58rem;
+  }
+
+  .home__data svg {
+    top: 150px;
+  }
+
+  .threeDCTN h3 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 0;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fruitStory h1,
+  .milkStory h1,
+  .sugarStory h1 {
+    font-size: 3.5rem;
+  }
+
+  .iframeCtn h3,
+  .carouselCard h3 {
+    font-size: 2rem;
+  }
+}

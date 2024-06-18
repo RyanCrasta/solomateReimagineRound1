@@ -1,0 +1,402 @@
+.sectionTwoCtn {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  background-color: #b00e2f;
+  /* background-color: pink; */
+  padding: 4rem 2rem;
+  padding-top: 10rem;
+  position: relative;
+}
+
+.twoPplIceCream {
+  /* width: 10rem; */
+  height: 40rem;
+  border-top-left-radius: 3rem;
+  position: absolute;
+  top: 80rem;
+}
+
+.hoddieGuyIceCream {
+  height: 40rem;
+  width: 30rem;
+  object-fit: cover;
+  border-top-right-radius: 3rem;
+  position: absolute;
+  top: 115rem;
+  right: 2rem;
+}
+
+.cloudsOne {
+  position: absolute;
+  width: 20rem;
+  top: 50rem;
+  left: 100vw;
+  z-index: 3;
+}
+
+.cloudsThree {
+  position: absolute;
+  width: 20rem;
+  top: 60rem;
+  left: 135vw;
+  z-index: 3;
+}
+
+.cloudsTwo {
+  position: absolute;
+  width: 30rem;
+  top: 80rem;
+  left: 150vw;
+  z-index: 3;
+}
+
+.sectionTwoMainText {
+  font-family: CervoMedium;
+  color: #fff;
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 9rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionTwoMainText div {
+  overflow: hidden;
+}
+
+.imgCtn {
+  width: 40%;
+  height: 70rem;
+  background-color: lightblue;
+  border-top-right-radius: 25rem;
+  border-top-left-radius: 25rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -15rem;
+  z-index: 0;
+}
+
+.girlEatingIceCreamOverlay {
+  background: url("/public/compress-orange-girl-icecream.jpg");
+  width: 100%;
+  height: 100%;
+  /* background-color: lightblue; */
+  border-top-right-radius: 25rem;
+  border-top-left-radius: 25rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* top: -15rem; */
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.realImg {
+  position: absolute;
+  border-top-right-radius: 25rem;
+  border-top-left-radius: 25rem;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: transparent;
+  overflow: hidden;
+  border-top: 200px solid #b00e2f;
+  border-left: 200px solid #b00e2f;
+  border-right: 200px solid #b00e2f;
+  z-index: 10;
+}
+
+.girlEatingIceCream {
+  width: 40%;
+  height: 70rem;
+  background-color: lightblue;
+  border-top-right-radius: 25rem;
+  border-top-left-radius: 25rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -15rem;
+  z-index: 0;
+}
+
+.girlEatingIceCream img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.naturalColor {
+  color: #7abe6a;
+}
+
+.secSectionSecHeadingCtn {
+  width: 40%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.svgStyle {
+  /* scale: 1.22; */
+}
+
+.secSectionSecHeading {
+  font-family: CervoMedium;
+  color: #fff;
+  font-size: 3.7rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.secSectionFirstPara {
+  font-family: HelveticaNeueCyrRoman;
+  font-size: 1.375rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+.secSectionSecPara {
+  font-family: HelveticaNeueCyrRoman;
+  font-size: 1.375rem;
+  color: #fff;
+}
+
+.tag-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  /* padding: 1rem; */
+  /* background-color: lightblue; */
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 0 0.5rem 1rem -0.25rem; */
+  text-transform: uppercase;
+  width: 25vw;
+}
+
+.tag-list li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.scroller {
+  background: #3b7fff;
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.667vw;
+  padding: 32px 0;
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.scroller-inner {
+  -webkit-font-smoothing: antialiased;
+  width: fit-content;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+}
+
+.scroller-inner li {
+  flex-shrink: 0;
+  padding: 0 4px;
+  /* font-smooth: always; */
+}
+
+.marquee__inner {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.marquee__inner div {
+  /* padding: 1rem; */
+  /* background-color: lightblue; */
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 0 0.5rem 1rem -0.25rem; */
+  text-transform: uppercase;
+  width: 25vw;
+}
+
+.marquee__inner div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.marquee {
+  /* transition: all 2s ease; */
+  overflow: hidden;
+
+  width: 100%;
+  height: max-content;
+}
+
+.marquee__inner {
+  transition: all 2s ease;
+  display: flex;
+  /* padding-block: 1rem; */
+  width: max-content;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  animation: scroll 10s var(--_animation-direction, forwards) linear infinite;
+}
+
+.marquee[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+/* .firstMarqueeImg {
+  margin-left: 0.6rem;
+} */
+
+.turn {
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  animation-name: turnAnimate;
+}
+
+.fastTurn {
+  animation-duration: 7s;
+}
+
+.slowTurn {
+  animation-duration: 21s;
+}
+
+.aboutUsBtn {
+  position: relative;
+  /* background-color: green; */
+  width: max-content;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+
+  width: 142px;
+  height: 142px;
+}
+
+.circleCurvySvg {
+  overflow: hidden;
+}
+
+.aboutUsBtn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 142px;
+  height: 142px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateY(100%);
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  transition: all 0.5s ease;
+}
+
+.aboutUsBtn:hover::before {
+  transform: translateY(0%);
+}
+
+.aboutUsBtn:hover > .rightArrow {
+  fill: #000;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.aboutUsCtn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: Cervo;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 3rem 0;
+  width: 33rem !important;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@keyframes turnAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hoddieGuyIceCream,
+  .twoPplIceCream {
+    display: none;
+  }
+
+  .sectionTwoMainText {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .imgCtn {
+    width: 100%;
+    height: 40rem;
+    top: unset;
+  }
+
+  .secSectionSecHeadingCtn {
+    width: 100%;
+  }
+
+  .marquee__inner div {
+    width: 45vw;
+  }
+
+  .cloudsTwo,
+  .cloudsThree,
+  .cloudsOne {
+    display: none;
+  }
+}
+
+.imgStyle {
+  /* width: 100vw; */
+  height: 40vh;
+}

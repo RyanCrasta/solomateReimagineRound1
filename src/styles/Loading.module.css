@@ -1,0 +1,157 @@
+.loadingCtn {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  z-index: 80;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #13a538;
+}
+
+.loadingCtn > div {
+  width: 80vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.number {
+  display: flex;
+  font-size: 20rem;
+  line-height: 20rem;
+}
+
+.four {
+  color: #778cee;
+}
+
+.zero {
+  color: #f17782;
+}
+
+.celebration {
+  font-family: HelveticaNeueCyrRoman;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.celebrationText {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+  position: absolute;
+  bottom: 10px;
+}
+
+.loaderImg {
+  width: 100%;
+  height: 20vh;
+}
+
+.loaderImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hungry-3 {
+  width: 35px;
+  height: 80px;
+  position: relative;
+}
+.hungry-3:after {
+  content: "";
+  position: absolute;
+  inset: 0 0 20px;
+  border-radius: 50px 50px 10px 10px;
+  padding: 1px;
+  background: linear-gradient(#ff4d80 33%, #ffa104 0 66%, #01ddc7 0) content-box;
+  --c: radial-gradient(farthest-side, #000 94%, #0000);
+  -webkit-mask: linear-gradient(#0000 0 0), var(--c) -10px -10px,
+    var(--c) 15px -14px, var(--c) 9px -6px, var(--c) -12px 9px,
+    var(--c) 14px 9px, var(--c) 23px 27px, var(--c) -8px 35px, var(--c) 50% 50%,
+    linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0), var(--c) -10px -10px, var(--c) 15px -14px,
+    var(--c) 9px -6px, var(--c) -12px 9px, var(--c) 14px 9px, var(--c) 23px 27px,
+    var(--c) -8px 35px, var(--c) 50% 50%, linear-gradient(#0000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude, add, add, add, add, add, add, add, add;
+  -webkit-mask-repeat: no-repeat;
+  animation: hu3 5s infinite;
+}
+
+.hungry-3:before {
+  content: "";
+  position: absolute;
+  inset: 50% calc(50% - 4px) 0;
+  background: #e0a267;
+  border-radius: 50px;
+}
+
+@keyframes hu3 {
+  0% {
+    -webkit-mask-size: auto, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  10% {
+    -webkit-mask-size: auto, 25px 25px, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  20% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  30% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 30px 30px, 0 0, 0 0, 0 0, 0 0,
+      0 0;
+  }
+  40% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 30px 30px, 30px 30px, 0 0,
+      0 0, 0 0, 0 0;
+  }
+  50% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 30px 30px, 30px 30px,
+      25px 25px, 0 0, 0 0, 0 0;
+  }
+  60% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 30px 30px, 30px 30px,
+      25px 25px, 25px 25px, 0 0, 0 0;
+  }
+  70% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 30px 30px, 30px 30px,
+      25px 25px, 25px 25px, 25px 25px, 0 0;
+  }
+  80%,
+  100% {
+    -webkit-mask-size: auto, 25px 25px, 25px 25px, 30px 30px, 30px 30px,
+      25px 25px, 25px 25px, 25px 25px, 200% 200%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .number {
+    font-size: 10rem;
+  }
+
+  .celebrationText {
+    font-size: 1.2rem;
+    bottom: 60px;
+  }
+
+  .loaderImg img {
+    scale: 1.4;
+  }
+}

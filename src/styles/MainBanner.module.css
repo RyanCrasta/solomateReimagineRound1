@@ -1,0 +1,658 @@
+.mainBannerFirstHalf {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #fee5ca; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.mainBannerFirstHalf main {
+  position: absolute;
+  bottom: 0;
+}
+
+.outerNav img {
+  width: 13rem;
+}
+
+.outerNav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: HelveticaNeueCyrRoman;
+
+  /* background-color: red; */
+
+  position: fixed;
+  top: 2vh;
+  left: 2rem;
+  right: 3rem;
+  z-index: 60;
+  height: 3rem;
+}
+
+.flavoursNav {
+  background-color: #fbf8eb;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: HelveticaNeueCyrRoman;
+  border: 1px solid #13a538;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.flavoursNav:hover,
+.hamburger:hover {
+  background-color: #13a538;
+  color: #fbf8eb;
+}
+
+.hamburger:hover .menuSVG {
+  fill: #fbf8eb;
+}
+
+.cartNav {
+  display: flex;
+  padding: 0 1rem;
+  background-color: #fbf8eb;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #13a538;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.cartNav:hover {
+  background-color: #13a538;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.cartNav div {
+  height: 100%;
+  border-left: 1px solid #13a538;
+  padding-left: 1rem;
+}
+
+.cartNav:hover > div {
+  border-left: 1px solid #fff;
+}
+
+.cartNav div {
+  display: flex;
+  align-items: center;
+}
+
+.cartNav svg path {
+  fill: #13a538;
+}
+
+.cartNav:hover > svg path {
+  fill: #fff;
+}
+
+.navRight {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: flex;
+  background-color: #fbf8eb;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid #13a538;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.hamburger:hover,
+.flavoursNav:hover {
+  border: 1px solid #fff;
+}
+
+.mainBannerRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.mainBannerRow > div {
+  /* width: 50%; */
+  /* background-color: red; */
+}
+
+.mainBannerRow h1 {
+  font-size: 12rem;
+  line-height: 13rem;
+  font-weight: 500;
+  color: #13a538;
+  font-family: HelveticaNeueCyrRoman;
+}
+
+.lastBannerRow h1 {
+  /* background-image: url("https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg"); */
+
+  background-image: url("https://img.freepik.com/free-photo/cups-with-delicious-ice-cream-flavors-arrangement_23-2150796552.jpg?t=st=1717654239~exp=1717657839~hmac=cfea9bc25a2fdb2f8aa16c1b756b1ad33bbb3feba40f387bd95772b48fc34e4d&w=1480");
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+
+.firstRowText {
+  width: 33rem !important;
+  font-size: 1.2rem;
+}
+
+.flavourBtnCtn {
+  width: 33rem !important;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #13a538;
+  text-transform: uppercase;
+  font-family: Cervo;
+  font-size: 1.5rem;
+}
+
+.mainBannerRowTwo {
+  align-self: center;
+}
+
+.firstRowChild {
+  overflow: hidden;
+}
+
+.paddingTopLarge {
+  padding-top: 5rem;
+}
+
+.firstRowChild h1 {
+  text-align: end;
+}
+
+.firstRowChild h1 {
+  background-image: url("https://images.unsplash.com/photo-1631209121750-a9f656d28f46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGZydWl0c3xlbnwwfHwwfHx8MA%3D%3D");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.middleRowChild h1 {
+  /* background-image: url("https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+
+  background-image: url("https://img.freepik.com/free-photo/top-view-fruity-popsicles_23-2148763635.jpg?t=st=1717653775~exp=1717657375~hmac=fa51cc1b56f211f9183fcc4fed0e51ce049405bf549d82b98de57cde2fc64fad&w=1380");
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+
+.downArrow {
+  width: unset !important;
+}
+
+.turn {
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  animation-name: turnAnimate;
+}
+
+.fastTurn {
+  animation-duration: 7s;
+}
+
+.slowTurn {
+  animation-duration: 21s;
+}
+
+.svgBannerCtn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+
+  width: 142px;
+  height: 142px;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.circleCurvySvg {
+  overflow: hidden;
+}
+
+.svgBannerCtn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #13a538;
+  transform: translateY(102%);
+  transition-delay: 0s;
+  transition-timing-function: ease;
+  transition: all 0.5s ease;
+}
+
+.svgBannerCtn:hover::before {
+  transform: translateY(0%);
+}
+
+.svgBannerCtn:hover > .rightArrow {
+  fill: #fff;
+}
+
+.lastBannerRow {
+  justify-content: space-between;
+}
+
+.marqueeLeftToRight,
+.marqueeRightToLeft {
+  font-size: 10rem;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.marqueeLeftToRight > div {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 19s linear infinite;
+}
+
+.marqueeRightToLeft > div {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollRightToLeft 18s linear infinite;
+}
+
+.marqueeLeftToRight div,
+.marqueeRightToLeft div {
+  flex-shrink: 0;
+}
+
+.fullColorText {
+  color: #b00e2f;
+}
+
+.strokeColorText {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #b00e2f;
+  color: transparent;
+}
+
+.mainBannerSecondHalf {
+  width: 100vw;
+  height: 50vh;
+}
+
+.mainBannerSecondHalfCtn {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #fed234;
+  /* #fee5ca; */
+
+  position: relative;
+  /* top: -200vh; */
+}
+
+.marqueeLeftToRight,
+.marqueeRightToLeft {
+  rotate: -5deg;
+  /* background-color: black; */
+}
+
+.oneCtnClass {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fad233;
+}
+
+.girlWithIceCream {
+  z-index: 1;
+  position: sticky;
+  width: 100%;
+  height: 50%;
+  top: 0%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.fullWidthImg {
+  width: 100%;
+  height: 200vh;
+  /* background-color: aquamarine; */
+  position: absolute;
+  top: 0vh;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  /* left: 5%; */
+  right: -12%;
+  /* transform: translateX(-50%); */
+}
+
+.girlWithIceCream img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  scale: 1;
+}
+
+.redbg {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #b00e2f; */
+}
+
+.greenbg {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+}
+
+.menuMenu {
+  display: flex;
+  justify-content: end;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.menuMenu div:hover {
+  background-color: #fff;
+  color: #13a538;
+}
+
+.menuMenu div:hover .crossMenu {
+  fill: #13a538;
+}
+
+.menuMenu div {
+  display: flex;
+  /* background-color: red; */
+  border: 1px solid #fff;
+  color: #fff;
+
+  align-items: center;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.overlayBlur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: red; */
+  z-index: 50;
+  backdrop-filter: blur(0px);
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.menuMenu p {
+  font-size: 15px;
+  font-family: HelveticaNeueCyrRoman;
+}
+
+.menuCard {
+  background-color: #13a538;
+  width: 33rem;
+  height: 65vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7;
+  transform-origin: right top;
+  scale: 0;
+  font-family: Cervo;
+}
+
+.menuCardNav {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 4rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.menuCardNav div {
+  overflow: hidden;
+}
+
+.menuCardNav p {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  width: max-content;
+  transform: translateY(140%);
+  /* padding: 0.5rem; */
+}
+
+.menuCardNav p:hover {
+  color: #13a538;
+  background-color: #fff;
+  padding: 0 0.5rem;
+}
+
+.firstRowChild h1 {
+  position: relative;
+}
+
+.upsideDownA {
+  /* position: relative; */
+}
+
+.upsideDownA::before {
+  content: "";
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+
+  border-radius: 50%;
+  background: url("https://images.unsplash.com/photo-1631209121750-a9f656d28f46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGZydWl0c3xlbnwwfHwwfHx8MA%3D%3D");
+  position: absolute;
+  top: -5rem;
+  background-position: bottom;
+}
+
+@keyframes turnAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(calc(5% - 1rem));
+  }
+}
+
+@keyframes scrollRightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-305% - 1rem));
+  }
+}
+
+.scroller {
+  width: 100%;
+  height: max-content;
+  rotate: -5deg;
+}
+
+.marqueeFooter {
+  position: absolute;
+  bottom: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+  width: 100%;
+  /* z-index: -1; */
+  outline: 3px solid lime;
+  /* background-color: #fbe4ca; */
+}
+
+.footerMarquee {
+  width: 100%;
+  height: 100%;
+}
+
+.footerMarquee div {
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-family: Cervo;
+  /* width: max-content; */
+  white-space: nowrap;
+}
+
+.scroller__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: max-content;
+
+  animation: scroll 20s var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.lastElement {
+  /* margin-right: 2rem; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: transparent;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .mainBannerRow h1 {
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+
+  .mainBannerFirstHalf {
+    padding: 1rem;
+  }
+
+  .mainBannerFirstHalf main {
+    top: 4rem;
+    left: 1rem;
+  }
+
+  .fullWidthImg {
+    bottom: 1vh;
+  }
+
+  .girlWithIceCream img {
+    object-position: bottom;
+  }
+
+  .upsideDownA::before {
+    width: 3rem;
+    height: 3rem;
+    top: -2rem;
+  }
+
+  .circleCurvySvg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .svgBannerCtn {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fullWidthImg {
+    width: 160%;
+    right: 0;
+  }
+
+  .outerNav img {
+    width: 12rem;
+  }
+
+  .flavoursNav {
+    display: none;
+  }
+
+  .cartNav div,
+  .hamburger p {
+    display: none;
+  }
+
+  .cartNav,
+  .hamburger {
+    height: 2.5rem;
+  }
+
+  .outerNav {
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .menuCard {
+    width: 23rem;
+    height: max-content;
+  }
+
+  .menuCardNav {
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

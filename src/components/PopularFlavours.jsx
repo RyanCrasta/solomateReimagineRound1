@@ -739,12 +739,12 @@ const PopularFlavours = () => {
           </svg>
 
           {/* <img
-            src="/compress-childIcecream.gif"
+            src="/compress-childIcecream-ezgif.com-optimize.gif"
             className={styles["videoStyle"]}
           /> */}
 
           <video className={styles["videoStyle"]} muted autoPlay playsinline loop>
-            <source src="/compress-childIcecream.mov" type="video/mp4" />
+            <source src="/4962001-sd_240_426_25fps.mp4" type="video/mp4" />
           </video>
 
           <div className={styles["outerBtn"]}>

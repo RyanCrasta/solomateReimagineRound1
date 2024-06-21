@@ -744,7 +744,7 @@ const PopularFlavours = () => {
           /> */}
 
           <video className={styles["videoStyle"]} muted autoPlay playsinline loop>
-            <source src="/4962001-sd_240_426_25fps.mp4" type="video/mp4" />
+            <source src="/4962001-sd_240_426_25fps.webm" type="video/mp4" />
           </video>
 
           <div className={styles["outerBtn"]}>

@@ -5,6 +5,7 @@ import gsap from "gsap";
 
 import SceneInit from "../lib/SceneInit";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 const PopularFlavours = () => {
   const [selectedCarousel, setSelectedCarousel] = useState("c1");
@@ -73,6 +74,15 @@ const PopularFlavours = () => {
 
       initialized.current = true;
 
+      const glftLoader = new GLTFLoader();
+
+      const dLoader = new DRACOLoader();
+      dLoader.setDecoderPath(
+        "https://www.gstatic.com/draco/versioned/decoders/1.5.7/"
+      );
+      dLoader.setDecoderConfig({ type: "js" });
+      glftLoader.setDRACOLoader(dLoader);
+
       const test = new SceneInit("myThreeJsCanvas");
       test.initialize();
       test.animate();
@@ -83,15 +93,17 @@ const PopularFlavours = () => {
       // test.scene.add(boxMesh);
 
       let loadedModel;
-      const glftLoader = new GLTFLoader();
-      glftLoader.load("/models/fruit_bowl/scene.gltf", (gltfScene) => {
-        loadedModel = gltfScene;
+      glftLoader.load(
+        "/public/models/fruit_bowl/fruit_bowl.glb",
+        (gltfScene) => {
+          loadedModel = gltfScene;
 
-        // gltfScene.scene.rotation.y = Math.PI / 8;
-        // gltfScene.scene.rotation.z = 0;
-        // gltfScene.scene.scale.set(10, 10, 10);
-        test.scene.add(gltfScene.scene);
-      });
+          // gltfScene.scene.rotation.y = Math.PI / 8;
+          // gltfScene.scene.rotation.z = 0;
+          // gltfScene.scene.scale.set(10, 10, 10);
+          test.scene.add(gltfScene.scene);
+        }
+      );
 
       function onScroll(e) {
         const scrollY = e.target.scrollTop;
@@ -426,10 +438,7 @@ const PopularFlavours = () => {
 
         <div className={`${styles["topLeftCurve"]} ${styles["mangoicecream"]}`}>
           <div className={styles["lastCtn"]}>
-            <img
-              className={styles["icecreamImg"]}
-              src="/mango-Photoroom.png"
-            />
+            <img className={styles["icecreamImg"]} src="/mango-Photoroom.png" />
             <img
               className={styles["contentInfo"]}
               src="/ingredients-mango.jpg"
@@ -470,10 +479,7 @@ const PopularFlavours = () => {
           className={`${styles["topRightCurve"]} ${styles["malaiicecream"]}`}
         >
           <div className={styles["lastCtn"]}>
-            <img
-              className={styles["icecreamImg"]}
-              src="/malai-Photoroom.png"
-            />
+            <img className={styles["icecreamImg"]} src="/malai-Photoroom.png" />
             <img
               className={styles["contentInfo"]}
               src="/ingredients-malai.jpg"
@@ -514,10 +520,7 @@ const PopularFlavours = () => {
           className={`${styles["bottomLeftCurve"]} ${styles["guavaicecream"]}`}
         >
           <div className={styles["lastCtn"]}>
-            <img
-              className={styles["icecreamImg"]}
-              src="/guava-Photoroom.png"
-            />
+            <img className={styles["icecreamImg"]} src="/guava-Photoroom.png" />
             <img
               className={styles["contentInfo"]}
               src="/ingredients-spicy-guava.jpg"
@@ -743,7 +746,13 @@ const PopularFlavours = () => {
             className={styles["videoStyle"]}
           /> */}
 
-          <video className={styles["videoStyle"]} muted autoPlay playsinline loop>
+          <video
+            className={styles["videoStyle"]}
+            muted
+            autoPlay
+            playsinline
+            loop
+          >
             <source src="/4962001-sd_240_426_25fps.webm" type="video/mp4" />
           </video>
 

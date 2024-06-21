@@ -744,7 +744,7 @@ const PopularFlavours = () => {
           /> */}
 
           <video className={styles["videoStyle"]} muted autoPlay playsinline loop>
-            <source src="/compress-childIcecream.mp4" type="video/mp4" />
+            <source src="/compress-childIcecream.mov" type="video/mp4" />
           </video>
 
           <div className={styles["outerBtn"]}>

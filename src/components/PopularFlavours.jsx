@@ -84,7 +84,7 @@ const PopularFlavours = () => {
 
       let loadedModel;
       const glftLoader = new GLTFLoader();
-      glftLoader.load("/public/models/fruit_bowl/scene.gltf", (gltfScene) => {
+      glftLoader.load("/models/fruit_bowl/scene.gltf", (gltfScene) => {
         loadedModel = gltfScene;
 
         // gltfScene.scene.rotation.y = Math.PI / 8;
@@ -340,11 +340,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/jackfruit-Photoroom.png"
+              src="/jackfruit-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-jackfruit.jpg"
+              src="/ingredients-jackfruit.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -385,11 +385,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/carrot-Photoroom.png"
+              src="/carrot-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-gajar-halwa.jpg"
+              src="/ingredients-gajar-halwa.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -428,11 +428,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/mango-Photoroom.png"
+              src="/mango-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-mango.jpg"
+              src="/ingredients-mango.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -472,11 +472,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/malai-Photoroom.png"
+              src="/malai-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-malai.jpg"
+              src="/ingredients-malai.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -516,11 +516,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/guava-Photoroom.png"
+              src="/guava-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-spicy-guava.jpg"
+              src="/ingredients-spicy-guava.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -560,11 +560,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/orange-Photoroom.png"
+              src="/orange-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-orange.jpg"
+              src="/ingredients-orange.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -605,11 +605,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/coconut-Photoroom.png"
+              src="/coconut-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-coconut.jpg"
+              src="/ingredients-coconut.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -651,11 +651,11 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/public/grapes-Photoroom.png"
+              src="/grapes-Photoroom.png"
             />
             <img
               className={styles["contentInfo"]}
-              src="/public/ingredients-grapes.jpg"
+              src="/ingredients-grapes.jpg"
             />
 
             <div className={styles["icecream-details"]}>
@@ -694,11 +694,11 @@ const PopularFlavours = () => {
           <div className={styles["orderNow"]}>Order now</div>
 
           <div className={styles["foodDeliveryLogoCtn"]}>
-            <img src="/public/Swiggy_logo.svg" />
+            <img src="/Swiggy_logo.svg" />
 
-            <img src="/public/Natural_IceCream_Logo.png" />
+            <img src="/Natural_IceCream_Logo.png" />
 
-            <img src="/public/Zomato.svg" />
+            <img src="/Zomato.svg" />
           </div>
         </div>
       </div>
@@ -739,7 +739,7 @@ const PopularFlavours = () => {
           </svg>
 
           <img
-            src="/public/compress-childIcecream.gif"
+            src="/compress-childIcecream.gif"
             className={styles["videoStyle"]}
           />
           {/* 
@@ -779,11 +779,11 @@ const PopularFlavours = () => {
             <p>across 🤍</p>
             <p>india 💚</p>
 
-            <img src="/public/watermelon_icon.png" />
+            <img src="/watermelon_icon.png" />
           </div>
 
           <div>
-            <img src="/public/outlets/indore.jpg" />
+            <img src="/outlets/indore.jpg" />
             {/* Indore Madhya Pradesh */}
 
             <div className={styles["branchDetails"]}>
@@ -791,77 +791,77 @@ const PopularFlavours = () => {
             </div>
           </div>
           <div>
-            <img src="/public/outlets/haryana-naturals.jpg" />
+            <img src="/outlets/haryana-naturals.jpg" />
             {/* Panchkula, Haryana */}
             <div className={styles["branchDetails"]}>
               <p>Panchkula, Haryana</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/hyderabad-naturals.jpg" />
+            <img src="/outlets/hyderabad-naturals.jpg" />
             {/* Hyderabad, Telangana */}
             <div className={styles["branchDetails"]}>
               <p>Hyderabad, Telangana</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/kolkata-naturals.jpg" />
+            <img src="/outlets/kolkata-naturals.jpg" />
             {/* Bangur Avenue, Kolkata */}
             <div className={styles["branchDetails"]}>
               <p>Bangur Avenue, Kolkata</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/chattisgarh.jpg" />
+            <img src="/outlets/chattisgarh.jpg" />
             {/* Raipur, Chattisgarh */}
             <div className={styles["branchDetails"]}>
               <p>Raipur, Chattisgarh</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/goa.jpg" />
+            <img src="/outlets/goa.jpg" />
             {/*  Anjuna, Goa*/}
             <div className={styles["branchDetails"]}>
               <p>Anjuna, Goa</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/gwalior.jpg" />
-            {/* Mahalgaon, Gwalior */}
+            <img src="/outlets/gwalior.jpg" />
+            {/* Mahalgaon Gwalior */}
             <div className={styles["branchDetails"]}>
               <p>Mahalgaon, Gwalior</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/vada.jpg" />
+            <img src="/outlets/vada.jpg" />
             {/* Ahmedabad, Gujarat */}
             <div className={styles["branchDetails"]}>
               <p>Ahmedabad, Gujarat</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/mumbai.jpg" />
+            <img src="/outlets/mumbai.jpg" />
             {/* andheri mumbai */}
             <div className={styles["branchDetails"]}>
               <p>Andheri, Mumbai</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/chandigarh.jpg" />
+            <img src="/outlets/chandigarh.jpg" />
             {/* Sector 7C Chandigarh */}
             <div className={styles["branchDetails"]}>
               <p>Sector 7C, Chandigarh</p>
             </div>
           </div>
           <div className={styles["kerala"]}>
-            <img src="/public/outlets/karela.jpg" />
+            <img src="/outlets/karela.jpg" />
             {/* Thiruvananthapuram’s kerala */}
             <div className={styles["branchDetails"]}>
               <p>Thiruvananthapuram, kerala</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/noida.jpeg" />
+            <img src="/outlets/noida.jpeg" />
             {/* Noida Uttar Pradesh */}
             <div className={styles["branchDetails"]}>
               <p>Noida, Uttar Pradesh</p>
@@ -869,21 +869,21 @@ const PopularFlavours = () => {
           </div>
 
           <div>
-            <img src="/public/outlets/Bengaluru.jpg" />
+            <img src="/outlets/Bengaluru.jpg" />
             {/* andheri mumbai */}
             <div className={styles["branchDetails"]}>
               <p>Electronic City, Bengaluru</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/rajasthan.JPG" />
+            <img src="/outlets/rajasthan.JPG" />
             {/* Sector 7C Chandigarh */}
             <div className={styles["branchDetails"]}>
               <p>Jaipur, Rajasthan</p>
             </div>
           </div>
           <div>
-            <img src="/public/outlets/delhi.jpg" />
+            <img src="/outlets/delhi.jpg" />
             <div className={styles["branchDetails"]}>
               <p>New Delhi, Delhi</p>
             </div>
@@ -924,7 +924,7 @@ const PopularFlavours = () => {
             <div className={styles["sugarTextCtn"]}>
               <div id="sugarText">
                 <h1>Sugar</h1>
-                <img src="/public/sugar.png" />
+                <img src="/sugar.png" />
               </div>
             </div>
             <p>
@@ -999,7 +999,7 @@ const PopularFlavours = () => {
       </div>
 
       <div id="justHeightID" className={styles["justHeight"]}>
-        <img src="/public/compress-friends-having-fun-their-reunion-Photoroom.png" />
+        <img src="/compress-friends-having-fun-their-reunion-Photoroom.png" />
 
         <div className={styles["marqueeFooter"]}>
           <div ref={scrollerRef} className={styles["scroller"]}>

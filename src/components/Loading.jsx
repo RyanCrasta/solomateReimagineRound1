@@ -68,7 +68,7 @@ const Loading = () => {
         </div>
 
         <div className={styles["loaderImg"]}>
-          <img src="/public/natural_ice_cream_cover.jpeg" />
+          <img src="/natural_ice_cream_cover.jpeg" />
         </div>
 
         <div className={styles["hungry-3"]}></div>

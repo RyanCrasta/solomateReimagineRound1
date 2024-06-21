@@ -175,31 +175,31 @@ const SectionTwo = () => {
       <img
         id="twoPplIceCreamID"
         className={styles["twoPplIceCream"]}
-        src="/public/compress-couple-eating-icecream.jpg"
+        src="/compress-couple-eating-icecream.jpg"
       />
 
       <img
         id="hoddieguyicecreamID"
         className={styles["hoddieGuyIceCream"]}
-        src="/public/compress-friends-enjoying-ice-cream-together.jpg"
+        src="/compress-friends-enjoying-ice-cream-together.jpg"
       />
 
       <img
         id="cloudsOneID"
         className={styles["cloudsOne"]}
-        src="/public/cloud1.webp"
+        src="/cloud1.webp"
       />
 
       <img
         id="cloudsThreeID"
         className={styles["cloudsThree"]}
-        src="/public/cloud1.webp"
+        src="/cloud1.webp"
       />
 
       <img
         id="cloudsTwoID"
         className={styles["cloudsTwo"]}
-        src="/public/cloud2.webp"
+        src="/cloud2.webp"
       />
 
       <div id="sectionTwoMainTextID" className={styles["sectionTwoMainText"]}>
@@ -310,30 +310,30 @@ const SectionTwo = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="/public/compress-beautiful-mature-woman-spending-time-around-city.jpg" />
+            <img src="/compress-beautiful-mature-woman-spending-time-around-city.jpg" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/public/compress-ethnic-youngster-eating-ice-cream-checkered-shirt.jpg" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src="/public/compress-portrait-little-cheerful-girl-summer-hat-with-ice-cream-her-hands.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/public/compress-medium-shot-smiley-woman-holding-ice-creams.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/public/compress-beautiful-mature-woman-spending-time-around-city.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/public/compress-ethnic-youngster-eating-ice-cream-checkered-shirt.jpg" />
+            <img src="/compress-ethnic-youngster-eating-ice-cream-checkered-shirt.jpg" />
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src="/public/compress-portrait-little-cheerful-girl-summer-hat-with-ice-cream-her-hands.jpg" />
+            <img src="/compress-portrait-little-cheerful-girl-summer-hat-with-ice-cream-her-hands.jpg" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/public/compress-medium-shot-smiley-woman-holding-ice-creams.jpg" />
+            <img src="/compress-medium-shot-smiley-woman-holding-ice-creams.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/compress-beautiful-mature-woman-spending-time-around-city.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/compress-ethnic-youngster-eating-ice-cream-checkered-shirt.jpg" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <img src="/compress-portrait-little-cheerful-girl-summer-hat-with-ice-cream-her-hands.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/compress-medium-shot-smiley-woman-holding-ice-creams.jpg" />
           </SwiperSlide>
         </Swiper>
       </div>

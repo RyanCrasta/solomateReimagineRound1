@@ -307,7 +307,7 @@ const MainBanner = () => {
         </div>
 
         <div>
-          <img src="/public/Naturals-logo-40years-removebg-preview.png" />
+          <img src="/Naturals-logo-40years-removebg-preview.png" />
         </div>
 
         <div className={styles["navRight"]}>
@@ -428,7 +428,7 @@ const MainBanner = () => {
 
       <div id="fullWidthImgID" className={styles["fullWidthImg"]}>
         <div id="girlWithIceCreamID" className={styles["girlWithIceCream"]}>
-          <img src="/public/girlWatermelonIcecream-transparent.png" />
+          <img src="/girlWatermelonIcecream-transparent.png" />
         </div>
       </div>
 

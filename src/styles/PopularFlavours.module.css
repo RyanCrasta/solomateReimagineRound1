@@ -977,23 +977,23 @@
 }
 
 .card[for="c1"] {
-  background-image: url("/public/peach-banner.jpg");
+  background-image: url("/peach-banner.jpg");
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
 .card[for="c2"] {
-  background-image: url("/public/fire-banner.jpg");
+  background-image: url("/fire-banner.jpg");
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
 .card[for="c3"] {
-  background-image: url("/public/coconut-banner.jpg");
+  background-image: url("/coconut-banner.jpg");
 
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
 .card[for="c4"] {
-  background-image: url("/public/toffee-banner.jpg");
+  background-image: url("/toffee-banner.jpg");
   background-repeat: no-repeat;
   /* background-size: contain; */
 }

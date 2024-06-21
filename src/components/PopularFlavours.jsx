@@ -93,17 +93,14 @@ const PopularFlavours = () => {
       // test.scene.add(boxMesh);
 
       let loadedModel;
-      glftLoader.load(
-        "/public/models/fruit_bowl/fruit_bowl.glb",
-        (gltfScene) => {
-          loadedModel = gltfScene;
+      glftLoader.load("/models/fruit_bowl.glb", (gltfScene) => {
+        loadedModel = gltfScene;
 
-          // gltfScene.scene.rotation.y = Math.PI / 8;
-          // gltfScene.scene.rotation.z = 0;
-          // gltfScene.scene.scale.set(10, 10, 10);
-          test.scene.add(gltfScene.scene);
-        }
-      );
+        // gltfScene.scene.rotation.y = Math.PI / 8;
+        // gltfScene.scene.rotation.z = 0;
+        // gltfScene.scene.scale.set(10, 10, 10);
+        test.scene.add(gltfScene.scene);
+      });
 
       function onScroll(e) {
         const scrollY = e.target.scrollTop;

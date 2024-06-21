@@ -738,9 +738,14 @@ const PopularFlavours = () => {
             <use xlinkHref="#giftobox-curve" className={styles["frame"]} />
           </svg>
 
-          <video className={styles["videoStyle"]} muted autoPlay loop>
-            <source src="/public/compress-childIcecream.mp4" type="video/mp4" />
-          </video>
+          <img
+            src="/public/compress-childIcecream.gif"
+            className={styles["videoStyle"]}
+          />
+          {/* 
+          <video className={styles["videoStyle"]} muted autoPlay playsinline loop>
+            <source src="/public/compress-childIcecream.gif" type="video/gif" />
+          </video> */}
 
           <div className={styles["outerBtn"]}>
             <div className={styles["innerBtn"]}>

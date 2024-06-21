@@ -33,7 +33,7 @@ export default class SceneInit {
       1000
     );
     this.camera.position.z = 1;
-    this.camera.zoom = window.innerWidth <= 800 ? 2.5 : 3.5;
+    this.camera.zoom = window.innerWidth <= 800 ?( window.innerWidth <= 350 ? 2 :  2.5) : window.innerWidth <= 1024 ? 3 :  3.5;
     this.camera.updateProjectionMatrix();
 
     // NOTE: Specify a canvas which is already created in the HTML.

@@ -7,7 +7,7 @@ const Loading = () => {
   useGSAP(() => {
     gsap.to("#loadingCtnID", {
       opacity: 0,
-      delay: 58,
+      delay: 30,
       // duration: 25,
       zIndex: "-10",
     });

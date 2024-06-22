@@ -58,7 +58,7 @@ const MainBanner = () => {
         duration: 1,
         transform: "rotate(0deg)",
 
-        delay: 59,
+        delay: 30.5,
       }
     );
 
@@ -70,7 +70,7 @@ const MainBanner = () => {
       {
         opacity: 1,
         duration: 2,
-        delay: 60,
+        delay: 31,
       }
     );
   });

@@ -12,6 +12,7 @@ import { Autoplay } from "swiper/modules";
 
 const SectionTwo = () => {
   const [scrollDown, setScrollDown] = useState(true);
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     gsap.to("#twoPplIceCreamID, #hoddieguyicecreamID", {
@@ -55,8 +56,6 @@ const SectionTwo = () => {
 
   useEffect(() => {
     var lastScrollTop = 0;
-
-    gsap.registerPlugin(ScrollTrigger);
 
     function pageThreeIntersectFn() {
       const observer = new IntersectionObserver((entries) => {

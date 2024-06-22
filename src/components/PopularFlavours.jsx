@@ -352,7 +352,7 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/jackfruit-Photoroom.png"
+              src="/jackfruit-Photoroom.jpg"
             />
             <img
               className={styles["contentInfo"]}
@@ -397,7 +397,7 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/carrot-Photoroom.png"
+              src="/carrot-Photoroom.jpg"
             />
             <img
               className={styles["contentInfo"]}
@@ -438,7 +438,7 @@ const PopularFlavours = () => {
 
         <div className={`${styles["topLeftCurve"]} ${styles["mangoicecream"]}`}>
           <div className={styles["lastCtn"]}>
-            <img className={styles["icecreamImg"]} src="/mango-Photoroom.png" />
+            <img className={styles["icecreamImg"]} src="/mango-Photoroom.jpg" />
             <img
               className={styles["contentInfo"]}
               src="/ingredients-mango.jpg"
@@ -479,7 +479,7 @@ const PopularFlavours = () => {
           className={`${styles["topRightCurve"]} ${styles["malaiicecream"]}`}
         >
           <div className={styles["lastCtn"]}>
-            <img className={styles["icecreamImg"]} src="/malai-Photoroom.png" />
+            <img className={styles["icecreamImg"]} src="/malai-Photoroom.jpg" />
             <img
               className={styles["contentInfo"]}
               src="/ingredients-malai.jpg"
@@ -520,7 +520,7 @@ const PopularFlavours = () => {
           className={`${styles["bottomLeftCurve"]} ${styles["guavaicecream"]}`}
         >
           <div className={styles["lastCtn"]}>
-            <img className={styles["icecreamImg"]} src="/guava-Photoroom.png" />
+            <img className={styles["icecreamImg"]} src="/guava-Photoroom.jpg" />
             <img
               className={styles["contentInfo"]}
               src="/ingredients-spicy-guava.jpg"
@@ -563,7 +563,7 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/orange-Photoroom.png"
+              src="/orange-Photoroom.jpg"
             />
             <img
               className={styles["contentInfo"]}
@@ -608,7 +608,7 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/coconut-Photoroom.png"
+              src="/coconut-Photoroom.jpg"
             />
             <img
               className={styles["contentInfo"]}
@@ -654,7 +654,7 @@ const PopularFlavours = () => {
           <div className={styles["lastCtn"]}>
             <img
               className={styles["icecreamImg"]}
-              src="/grapes-Photoroom.png"
+              src="/grapes-Photoroom.jpg"
             />
             <img
               className={styles["contentInfo"]}
@@ -870,7 +870,7 @@ const PopularFlavours = () => {
             </div>
           </div>
           <div>
-            <img src="/outlets/noida.jpeg" />
+            <img src="/outlets/noida.jpg" />
             {/* Noida Uttar Pradesh */}
             <div className={styles["branchDetails"]}>
               <p>Noida, Uttar Pradesh</p>
@@ -885,7 +885,7 @@ const PopularFlavours = () => {
             </div>
           </div>
           <div>
-            <img src="/outlets/rajasthan.JPG" />
+            <img src="/outlets/rajasthan.jpg" />
             {/* Sector 7C Chandigarh */}
             <div className={styles["branchDetails"]}>
               <p>Jaipur, Rajasthan</p>

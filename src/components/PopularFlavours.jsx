@@ -93,7 +93,7 @@ const PopularFlavours = () => {
       // test.scene.add(boxMesh);
 
       let loadedModel;
-      glftLoader.load("/fruit_bowl-v1.glb", (gltfScene) => {
+      glftLoader.load("/model.glb", (gltfScene) => {
         loadedModel = gltfScene;
 
         // gltfScene.scene.rotation.y = Math.PI / 8;

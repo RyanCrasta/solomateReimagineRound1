@@ -16,9 +16,9 @@ function App() {
       <MainBanner />
       <SectionTwo />
       {/* <div id="fukat"></div> */}
-      {/* <Suspense fallback={<p>loading..</p>}> */}
-      <PopularFlavours />
-      {/* </Suspense> */}
+      <Suspense fallback={<p>loading..</p>}>
+        <LazySectionTwo />
+      </Suspense>
     </div>
   );
 }

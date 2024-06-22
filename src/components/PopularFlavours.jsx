@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/PopularFlavours.module.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import SceneInit from "../lib/SceneInit";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
@@ -15,6 +16,8 @@ const PopularFlavours = () => {
   const scrollerRefThree = useRef(null);
 
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     // gsap.to("#giftBoxCtnID", {
     //   y: "-10%",
     //   duration: 20,

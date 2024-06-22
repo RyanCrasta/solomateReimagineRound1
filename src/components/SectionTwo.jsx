@@ -21,7 +21,7 @@ const SectionTwo = () => {
       scrollTrigger: {
         scroller: "body",
         // markers: true,
-        trigger: "#secSectionSecHeadingCtnID",
+        trigger: "#realImgID",
         scrub: 5,
       },
     });

@@ -251,7 +251,7 @@ const MainBanner = () => {
               <p>About us</p>
             </div>
             <div>
-              <p>Catalog</p>
+              <p>Products</p>
             </div>
             <div>
               <p>Selling points</p>
@@ -260,7 +260,7 @@ const MainBanner = () => {
               <p>FAQ</p>
             </div>
             <div>
-              <p>Contact</p>
+              <p>Contact us</p>
             </div>
           </div>
         </div>

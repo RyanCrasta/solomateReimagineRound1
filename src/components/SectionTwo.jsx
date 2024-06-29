@@ -20,7 +20,6 @@ const SectionTwo = () => {
       duration: 2,
       scrollTrigger: {
         scroller: "body",
-        // markers: true,
         trigger: "#realImgID",
         scrub: 5,
       },
@@ -43,15 +42,6 @@ const SectionTwo = () => {
       duration: 20,
       repeat: -1,
     });
-
-    // gsap.to("#girlEatingIceCreamOverlayID", {
-    //   scale: 1.2,
-
-    //   scrollTrigger: {
-    //     trigger: "#lastPara",
-    //     scrub: 5,
-    //   },
-    // });
   });
 
   useEffect(() => {
@@ -143,7 +133,7 @@ const SectionTwo = () => {
     pageThreeIntersectFn();
 
     const scrollDirection = (scrollTop) => {
-      var st = scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+      var st = scrollTop;
       if (st >= lastScrollTop) {
         // downscroll code
         setScrollDown(true);

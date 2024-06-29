@@ -18,29 +18,6 @@ const PopularFlavours = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // gsap.to("#giftBoxCtnID", {
-    //   y: "-10%",
-    //   duration: 20,
-    //   scrollTrigger: {
-    //     trigger: "#partnershipGirlID",
-    //     scrub: 2,
-    //   },
-    // });
-
-    gsap.to("#textPathID", {
-      startOffset: "100%",
-      duration: 4,
-    });
-
-    // gsap.to("#partnershipGirlImgID", {
-    //   y: "50%",
-    //   duration: 2,
-    //   scrollTrigger: {
-    //     trigger: "#partnershipGirlID",
-    //     scrub: 1,
-    //   },
-    // });
-
     if (
       !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
@@ -58,7 +35,6 @@ const PopularFlavours = () => {
       });
     }
 
-    //  justHeightThreeID
     gsap.to("#justHeightThreeID", {
       position: "sticky",
       scrollTrigger: {
@@ -71,10 +47,7 @@ const PopularFlavours = () => {
   const initialized = useRef(false);
 
   useEffect(() => {
-    let manualScrollY = 0;
     if (!initialized.current) {
-      var lastScrollTop = 0;
-
       initialized.current = true;
 
       const glftLoader = new GLTFLoader();
@@ -90,18 +63,10 @@ const PopularFlavours = () => {
       test.initialize();
       test.animate();
 
-      // const boxGeometry = new THREE.BoxGeometry(8, 8, 8);
-      // const boxMaterial = new THREE.MeshNormalMaterial();
-      // const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-      // test.scene.add(boxMesh);
-
       let loadedModel;
       glftLoader.load("/model.glb", (gltfScene) => {
         loadedModel = gltfScene;
 
-        // gltfScene.scene.rotation.y = Math.PI / 8;
-        // gltfScene.scene.rotation.z = 0;
-        // gltfScene.scene.scale.set(10, 10, 10);
         test.scene.add(gltfScene.scene);
       });
 
@@ -113,24 +78,14 @@ const PopularFlavours = () => {
 
       const animate = () => {
         if (loadedModel) {
-          //Here we could add some code to update the scene, adding some automatic movement
-          // loadedModel.scene.rotation.x = -1.2 + (800 * 2.5) / window.innerHeight;
-
-          //Make the eye move
           if (loadedModel.scene) {
             loadedModel.scene.rotation.x = -1.2 + (800 * 2.5) / 1000;
-            // loadedModel.scene.rotation.x =
-            //   -1.2 + (800 * 2.5) / window.innerHeight;
-
-            //I've played with the constants here until it looked good
-            // object.rotation.x = -1.2 + (mouseY * 2.5) / window.innerHeight;
           }
 
           document
             .querySelector("body")
             .addEventListener("scroll", (e) => onScroll(e));
         }
-        // requestAnimationFrame(animate);
 
         requestAnimationFrame(animate);
       };
@@ -148,9 +103,7 @@ const PopularFlavours = () => {
 
           if (entry.isIntersecting === true) {
             if (currentY < previousY) {
-              // document.querySelector("#justHeightThreeID").style.position = "sticky";
             } else if (currentY > previousY) {
-              // document.querySelector("#ryanID").style.position = "static";
             }
           }
 
@@ -741,11 +694,6 @@ const PopularFlavours = () => {
             <use xlinkHref="#giftobox-curve" className={styles["frame"]} />
           </svg>
 
-          {/* <img
-            src="/compress-childIcecream-ezgif.com-optimize.gif"
-            className={styles["videoStyle"]}
-          /> */}
-
           <video
             className={styles["videoStyle"]}
             muted
@@ -753,7 +701,7 @@ const PopularFlavours = () => {
             playsinline
             loop
           >
-            <source src="/4962001-sd_240_426_25fps.webm" type="video/mp4" />
+            <source src="/two-child-eating-icecream.webm" type="video/mp4" />
           </video>
 
           <div className={styles["outerBtn"]}>
@@ -779,10 +727,7 @@ const PopularFlavours = () => {
       </div>
 
       <div className={styles["postonRelative"]}>
-        {/* <h3>Our stores across India</h3> */}
-
         <div id="partnershipGirlID" className={styles["partnershipGirl"]}>
-          {/* <img id="partnershipGirlImgID" src="/public/allnaturals.jpg" /> */}
           <div className={styles["loved"]}>
             <p>loved 🧡</p>
             <p>across 🤍</p>
@@ -793,7 +738,6 @@ const PopularFlavours = () => {
 
           <div>
             <img src="/outlets/indore.jpg" />
-            {/* Indore Madhya Pradesh */}
 
             <div className={styles["branchDetails"]}>
               <p>Indore, Madhya Pradesh</p>
@@ -801,77 +745,66 @@ const PopularFlavours = () => {
           </div>
           <div>
             <img src="/outlets/haryana-naturals.jpg" />
-            {/* Panchkula, Haryana */}
             <div className={styles["branchDetails"]}>
               <p>Panchkula, Haryana</p>
             </div>
           </div>
           <div>
             <img src="/outlets/hyderabad-naturals.jpg" />
-            {/* Hyderabad, Telangana */}
             <div className={styles["branchDetails"]}>
               <p>Hyderabad, Telangana</p>
             </div>
           </div>
           <div>
             <img src="/outlets/kolkata-naturals.jpg" />
-            {/* Bangur Avenue, Kolkata */}
             <div className={styles["branchDetails"]}>
               <p>Bangur Avenue, Kolkata</p>
             </div>
           </div>
           <div>
             <img src="/outlets/chattisgarh.jpg" />
-            {/* Raipur, Chattisgarh */}
             <div className={styles["branchDetails"]}>
               <p>Raipur, Chattisgarh</p>
             </div>
           </div>
           <div>
             <img src="/outlets/goa.jpg" />
-            {/*  Anjuna, Goa*/}
             <div className={styles["branchDetails"]}>
               <p>Anjuna, Goa</p>
             </div>
           </div>
           <div>
             <img src="/outlets/gwalior.jpg" />
-            {/* Mahalgaon Gwalior */}
             <div className={styles["branchDetails"]}>
               <p>Mahalgaon, Gwalior</p>
             </div>
           </div>
           <div>
             <img src="/outlets/vada.jpg" />
-            {/* Ahmedabad, Gujarat */}
             <div className={styles["branchDetails"]}>
               <p>Ahmedabad, Gujarat</p>
             </div>
           </div>
           <div>
             <img src="/outlets/mumbai.jpg" />
-            {/* andheri mumbai */}
             <div className={styles["branchDetails"]}>
               <p>Andheri, Mumbai</p>
             </div>
           </div>
           <div>
             <img src="/outlets/chandigarh.jpg" />
-            {/* Sector 7C Chandigarh */}
             <div className={styles["branchDetails"]}>
               <p>Sector 7C, Chandigarh</p>
             </div>
           </div>
           <div className={styles["kerala"]}>
             <img src="/outlets/karela.jpg" />
-            {/* Thiruvananthapuram’s kerala */}
             <div className={styles["branchDetails"]}>
               <p>Thiruvananthapuram, kerala</p>
             </div>
           </div>
           <div>
             <img src="/outlets/noida.jpg" />
-            {/* Noida Uttar Pradesh */}
             <div className={styles["branchDetails"]}>
               <p>Noida, Uttar Pradesh</p>
             </div>
@@ -879,14 +812,12 @@ const PopularFlavours = () => {
 
           <div>
             <img src="/outlets/Bengaluru.jpg" />
-            {/* andheri mumbai */}
             <div className={styles["branchDetails"]}>
               <p>Electronic City, Bengaluru</p>
             </div>
           </div>
           <div>
             <img src="/outlets/rajasthan.jpg" />
-            {/* Sector 7C Chandigarh */}
             <div className={styles["branchDetails"]}>
               <p>Jaipur, Rajasthan</p>
             </div>
@@ -1049,8 +980,6 @@ const PopularFlavours = () => {
         id="justHeightThreeID"
         className={styles["justHeightThree"]}
       >
-        {/* <img src="https://plus.unsplash.com/premium_photo-1683120952553-af3ec9cd60c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> */}
-
         <h3>Ask and you shall receive</h3>
 
         <div className={styles["formCtn"]}>

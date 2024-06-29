@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import styles from "../styles/MainBanner.module.css";
-
-// import girlwithicecreamBanner from "../../public/girlwithicecreamBanner.jpg";
-
-// import girlwithicecreamBanner from "https://images.unsplash.com/photo-1672393158642-f7739caf22ff?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -14,39 +10,6 @@ const MainBanner = () => {
   }, []);
 
   useGSAP(() => {
-    // gsap.to("#girlWithIceCreamID img", {
-    //   scale: 1,
-    //   duration: 1,
-    //   scrollTrigger: {
-    //     trigger: "#mainBannerSecondHalfCtnID",
-    //     scrub: 5,
-    //     end: "-=5px",
-    //   },
-    // });
-
-    // gsap.from("#girlWithIceCreamID", {
-    //   width: "100%",
-    //   height: "50%",
-    //   duration: 1,
-    //   top: "0",
-    //   scrollTrigger: {
-    //     trigger: "#mainBannerSecondHalfCtnID",
-    //     scrub: 5,
-    //     end: "-=5px",
-    //     // scroller: "body",
-    //   },
-    // });
-
-    // gsap.to("#girlWithIceCreamID img", {
-    //   y: "200px",
-    //   duration: 0.1,
-    //   scrollTrigger: {
-    //     trigger: "#sectionTwoCtnID",
-    //     end: "-=5px",
-    //     scrub: 5,
-    //   },
-    // });
-
     gsap.fromTo(
       ".headingText",
       {
@@ -162,7 +125,7 @@ const MainBanner = () => {
     document.querySelector("body").addEventListener(
       "scroll",
       (event) => {
-        var st = event.target.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        var st = event.target.scrollTop;
         if (st >= lastScrollTop) {
           // downscroll code
         } else if (st < lastScrollTop) {
@@ -171,12 +134,10 @@ const MainBanner = () => {
             gsap.to("#girlWithIceCreamID", {
               width: "100%",
               height: "50%",
-              // duration: 1,
               top: "0",
               scrollTrigger: {
                 scrub: 5,
                 end: "-=5px",
-                // trigger: "#mainBannerSecondHalfCtnID",
               },
             });
           }
@@ -185,8 +146,6 @@ const MainBanner = () => {
       },
       false
     );
-
-    // return () => (window.onscroll = null);
   }, []);
 
   const scrollerRef = useRef(null);

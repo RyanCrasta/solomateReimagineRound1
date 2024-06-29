@@ -1,15 +1,11 @@
 .sectionTwoCtn {
-  /* width: 100vw; */
-  /* height: 100vh; */
   background-color: #b00e2f;
-  /* background-color: pink; */
   padding: 4rem 2rem;
   padding-top: 10rem;
   position: relative;
 }
 
 .twoPplIceCream {
-  /* width: 10rem; */
   height: 40rem;
   border-top-left-radius: 3rem;
   position: absolute;
@@ -86,7 +82,6 @@
   background: url("/compress-orange-girl-icecream.jpg");
   width: 100%;
   height: 100%;
-  /* background-color: lightblue; */
   border-top-right-radius: 25rem;
   border-top-left-radius: 25rem;
   margin: 0 auto;
@@ -95,7 +90,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  /* top: -15rem; */
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -150,10 +144,6 @@
   padding: 2rem 0;
 }
 
-.svgStyle {
-  /* scale: 1.22; */
-}
-
 .secSectionSecHeading {
   font-family: CervoMedium;
   color: #fff;
@@ -182,10 +172,6 @@
 }
 
 .tag-list li {
-  /* padding: 1rem; */
-  /* background-color: lightblue; */
-  /* border-radius: 0.5rem; */
-  /* box-shadow: 0 0.5rem 1rem -0.25rem; */
   text-transform: uppercase;
   width: 25vw;
 }
@@ -220,7 +206,6 @@
 .scroller-inner li {
   flex-shrink: 0;
   padding: 0 4px;
-  /* font-smooth: always; */
 }
 
 .marquee__inner {
@@ -230,10 +215,6 @@
 }
 
 .marquee__inner div {
-  /* padding: 1rem; */
-  /* background-color: lightblue; */
-  /* border-radius: 0.5rem; */
-  /* box-shadow: 0 0.5rem 1rem -0.25rem; */
   text-transform: uppercase;
   width: 25vw;
 }
@@ -245,9 +226,7 @@
 }
 
 .marquee {
-  /* transition: all 2s ease; */
   overflow: hidden;
-
   width: 100%;
   height: max-content;
 }
@@ -255,7 +234,6 @@
 .marquee__inner {
   transition: all 2s ease;
   display: flex;
-  /* padding-block: 1rem; */
   width: max-content;
   flex-wrap: nowrap;
   gap: 1rem;
@@ -265,10 +243,6 @@
 .marquee[data-direction="right"] {
   --_animation-direction: reverse;
 }
-
-/* .firstMarqueeImg {
-  margin-left: 0.6rem;
-} */
 
 .turn {
   animation-timing-function: linear;
@@ -288,12 +262,10 @@
 
 .aboutUsBtn {
   position: relative;
-  /* background-color: green; */
   width: max-content;
   overflow: hidden;
   border-radius: 50%;
   cursor: pointer;
-
   width: 142px;
   height: 142px;
 }
@@ -369,7 +341,7 @@
   .cloudsOne {
     display: none;
   }
-  
+
   .hoddieGuyIceCream,
   .twoPplIceCream {
     display: none;
@@ -455,7 +427,6 @@
 }
 
 .imgStyle {
-  /* width: 100vw; */
   height: 40vh;
 }
 

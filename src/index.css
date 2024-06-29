@@ -9,16 +9,10 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-
   background-color: #fee5ca;
 }
 
-html {
-  /* scroll-behavior: smooth; */
-}
-
 body {
-  /* */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -47,7 +41,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -55,7 +48,6 @@ body {
 }
 
 .swiper-slide img {
-  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;

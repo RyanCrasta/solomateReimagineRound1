@@ -13,16 +13,12 @@
 }
 
 .realIceCream {
-  /* width: 100vw; */
-  /* background-color: aliceblue; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-
   position: relative;
   z-index: 2;
-
   padding: 0 2rem;
 }
 
@@ -96,8 +92,6 @@
 }
 
 .icecream-details {
-  /* height: max-content; */
-  /* background-color: pink; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,14 +103,12 @@
 .contentInfo {
   opacity: 0;
   object-fit: cover !important;
-
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   transition: all 1s ease;
-
   width: 100%;
   height: 85% !important;
   z-index: 2;
@@ -136,7 +128,6 @@
 .lastCtn {
   width: 100%;
   height: 100%;
-  /* ryan */
   cursor: default;
 }
 
@@ -176,13 +167,8 @@
 }
 
 .cartImg {
-  /* width: 5rem; */
-  /* height: 5rem; */
-
   width: 100%;
   height: 15%;
-
-  /* border-radius: 50%; */
   background-color: #b00e2f !important;
   display: flex;
   align-items: center;
@@ -191,29 +177,17 @@
   cursor: pointer;
   bottom: 0;
   transition: all 0.5s ease;
-
-  /* right: 2rem; */
-  /* bottom: 0.6rem; */
 }
-
-/* .cartImg:hover .dummyCartImg {
-  scale: 1;
-} */
 
 .cartImg:hover {
   background-color: #900b27 !important;
 }
-
-/* .cartImg:hover svg path {
-  fill: #b00e2f;
-} */
 
 .dummyCartImg {
   position: absolute;
   background-color: #fee5ca;
   width: 100%;
   height: 100%;
-  /* border-radius: 190%; */
   scale: 0;
   transition: all 0.4s ease;
 }
@@ -263,18 +237,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: #fee5ca;
   z-index: 2;
   position: relative;
   padding-bottom: 6rem;
 }
-
-/* .giftBoxCtn video {
-  width: 50rem;
-  border-top-right-radius: 25rem;
-  border-top-left-radius: 25rem;
-} */
 
 .textCurve {
   font-family: Cervo;
@@ -285,27 +252,13 @@
   fill: #b00e2f;
 }
 
-/* .outerBtn {
-  width: 12rem;
-  height: 12rem;
-  background-color: #fee5ca;
-  border-radius: 50%;
-  position: relative;
-  border: 1px solid #b00e2f;
-  top: -5rem;
-  cursor: pointer;
-} */
-
 .outerBtn {
   width: 12rem;
   height: 12rem;
   background-color: #fee5ca;
   border-radius: 50%;
-  /* position: relative; */
   border: 1px solid #b00e2f;
-  /* top: -5rem; */
   cursor: pointer;
-
   position: absolute;
   left: 50%;
   bottom: 2rem;
@@ -319,8 +272,6 @@
   background-color: #b00e2f;
   border-radius: 50%;
   position: absolute;
-  /* top: 50%; */
-  /* bottom: 32%; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -392,11 +343,8 @@
   width: 100%;
   height: 100%;
   padding-left: -4rem;
-  /* position: absolute; */
-
   border: 1px solid lightgray;
   background-color: lightgray;
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -427,14 +375,8 @@
   transition: all 0.5s ease;
 }
 
-.branchDetails {
-}
-
-/* .partnershipGirl > div:hover  */
-
 .partnershipGirl > div:hover .branchDetails {
   backdrop-filter: blur(6px);
-
   position: absolute;
   width: 100%;
   height: 100%;
@@ -465,22 +407,11 @@
   object-position: top;
 }
 
-/* .partnershipGirl img {
-  position: absolute;
-  width: 100%;
-  top: -60%;
-} */
-
 .dummyDiv {
   width: 100%;
   height: 300vh;
   position: relative;
   z-index: 2;
-}
-
-.threeDCtn {
-  /* padding: 0 2rem; */
-  /* margin-top: 2rem; */
 }
 
 .threeDCTN h3 {
@@ -498,7 +429,6 @@
   z-index: 1;
   width: 100%;
   height: 150vh;
-  /* overflow: hidden; */
   padding: 0 2rem;
 }
 
@@ -535,18 +465,15 @@
 }
 
 .containerThreeD canvas {
-  /* background-color: red; */
   width: 100% !important;
   height: 100vh !important;
   position: sticky;
   top: 10vh;
-  /* left: 0; */
 }
 
 .justHeight {
   height: 250vh;
   background-color: #fbe4ca;
-
   position: relative;
   display: flex;
   align-items: center;
@@ -555,13 +482,10 @@
 }
 
 .justHeight img {
-  /* it was 80 */
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   position: sticky;
-
   top: 10vh;
 }
 
@@ -578,7 +502,6 @@
   position: static;
   z-index: -10;
   bottom: 0;
-  /* top: 20vh; */
 }
 
 .justHeightThreeCtn {
@@ -601,7 +524,6 @@
 }
 
 .threeDCTN canvas {
-  /* margin-top: 13rem; */
   width: 100vw !important;
   height: 100vh !important;
   position: sticky;
@@ -613,16 +535,11 @@
 .home__data {
   width: 50rem;
   height: 100vh;
-
-  /* height: 58rem; */
-
   position: relative;
-  /* background-color: pink; */
 }
 
 .home__data svg {
   position: absolute;
-  /* top: 150px; */
   left: 50%;
   transform: translateX(-50%);
 
@@ -647,12 +564,9 @@
 .videoStyle {
   clip-path: url(#frame-clip);
   object-fit: cover;
-
   position: absolute;
-  /* top: 150px; */
   left: 50%;
   transform: translateX(-50%);
-
   width: 602px;
   height: 841px;
 }
@@ -663,7 +577,6 @@
 
 .fruitStory {
   width: 33rem;
-  /* height: 40rem; */
   height: max-content;
   background-color: #13a538;
   position: absolute;
@@ -759,16 +672,13 @@
   font-size: 10rem;
   text-transform: uppercase;
   font-family: Cervo;
-  /* width: max-content; */
   white-space: nowrap;
 }
 
 .scroller__inner {
   display: flex;
   flex-wrap: nowrap;
-  /* gap: 1rem; */
   width: max-content;
-
   animation: scroll 20s var(--_animation-direction, forwards) linear infinite;
 }
 
@@ -777,7 +687,6 @@
 }
 
 .lastElement {
-  /* margin-right: 2rem; */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   color: transparent;
@@ -791,14 +700,12 @@
 
 .bannerIframsection {
   width: 100%;
-  /* height: 130vh; */
   background-color: #fbe4ca;
 }
 
 .foodDelivery {
   width: 100%;
   height: 30vh;
-  /* background-color: #fed234; */
   margin-top: 10rem;
 
   display: flex;
@@ -978,32 +885,24 @@
 .card[for="c1"] {
   background-image: url("/peach-banner.jpg");
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
 .card[for="c2"] {
   background-image: url("/fire-banner.jpg");
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
 .card[for="c3"] {
   background-image: url("/coconut-banner.jpg");
-
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
 .card[for="c4"] {
   background-image: url("/toffee-banner.jpg");
   background-repeat: no-repeat;
-  /* background-size: contain; */
 }
 
 .formCtn {
-  /* background-color: pink; */
   width: 100%;
   font-family: HelveticaNeueCyrRoman;
-
   padding: 4rem 2rem 0 2rem;
-
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -1030,8 +929,6 @@
   display: flex;
   flex-direction: column;
   height: 5.1175rem;
-
-  /* background-color: pink; */
 }
 
 .detailsCustomer {
@@ -1042,8 +939,6 @@
 .detailsCustomer > div {
   width: 30%;
   height: 100%;
-  /* background-color: orange; */
-
   display: flex;
   flex-direction: column;
 }
@@ -1073,21 +968,17 @@
 
 .labelStyling {
   height: 2rem;
-  /* background-color: green; */
 }
 
 .footer {
   position: absolute;
   bottom: 0;
-  /* background-color: lightblue; */
   width: 100%;
   height: 5rem;
   font-family: HelveticaNeueCyrRoman;
-
   display: flex;
   align-items: center;
   font-size: 15px;
-
   justify-content: space-between;
   padding: 0 1rem;
   color: #fff;
@@ -1105,7 +996,6 @@
 .aboutMe a {
   text-decoration: none;
   color: #fff;
-
   border-bottom: 1px solid #fff;
 }
 
@@ -1375,18 +1265,9 @@
     height: max-content;
   }
 
-  /* .branchDetails {
-    align-items: end;
-    justify-content: start;
-  } */
-
   .branchDetails p {
     font-size: 1rem;
   }
-
-  /* .partnershipGirl > div:hover .branchDetails {
-    width: 100vw;
-  } */
 
   .myText {
     font-size: 100px;
@@ -1439,21 +1320,6 @@
     font-size: 2rem;
     line-height: 2rem;
   }
-
-  /* .partnershipGirl > div img {
-    width: 100vw;
-  }
-
-  .partnershipGirl > div {
-    width: 90%;
-    height: 100%;
-  }
-
-  .partnershipGirl {
-    flex-wrap: unset;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  } */
 
   .postonRelative {
     height: 18rem;
@@ -1535,13 +1401,6 @@
 
   .cardInput:checked + label {
     width: 100%;
-  }
-
-  .card[for="c1"],
-  .card[for="c2"],
-  .card[for="c3"],
-  .card[for="c4"] {
-    /* background-size: contain; */
   }
 
   .justHeight img {

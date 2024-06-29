@@ -906,7 +906,7 @@ const PopularFlavours = () => {
 
           <div id="fruitStoryID" className={styles["fruitStory"]}>
             <div>
-              <h1 id="fruitText">Fruits 🥭</h1>
+              <h1 id="fruitText">Fruits &#129389;</h1>
             </div>
             <p>
               Fruit is in the DNA of Naturals ice cream. It’s what makes our ice
@@ -919,7 +919,7 @@ const PopularFlavours = () => {
 
           <div id="milkStoryID" className={styles["milkStory"]}>
             <div>
-              <h1 id="milkText">milk 🐮</h1>
+              <h1 id="milkText">milk &#128046;</h1>
             </div>
             <p>
               Milk is a key ingredient in ice cream. And the milk that goes into

@@ -747,7 +747,6 @@
   width: 100%;
   width: 100%;
   z-index: -1;
-  outline: 3px solid lime;
   background-color: #fbe4ca;
 }
 
@@ -1239,7 +1238,8 @@
     height: 35%;
   }
 
-  .icecream-details div p:last-child {
+  .icecream-details div p:last-child,
+  .icecream-details div p:first-child {
     font-size: 1.48rem;
   }
 }
@@ -1254,12 +1254,16 @@
     height: 75vh;
   }
 
-  .icecream-details div p:last-child {
+  .icecream-details div p:last-child,
+  .icecream-details div p:first-child {
     font-size: 1.35rem;
   }
 }
 
 @media screen and (max-width: 540px) {
+  .realIceCream {
+    padding: 0 1rem;
+  }
   .servingDetails {
     height: unset;
   }
@@ -1276,7 +1280,8 @@
     height: unset;
   }
 
-  .icecream-details div p:last-child {
+  .icecream-details div p:last-child,
+  .icecream-details div p:first-child {
     font-size: 1.3rem;
   }
 
@@ -1324,8 +1329,7 @@
   .home__data svg {
     top: 150px;
   }
-  
-  
+
   .threeDCTN canvas,
   .fruitStory,
   .milkStory,
@@ -1360,7 +1364,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .carouselCard h3, .justHeightThree h3 {
+  .carouselCard h3,
+  .justHeightThree h3 {
     font-size: 4.68rem;
   }
 }
@@ -1578,15 +1583,15 @@
 }
 
 @media screen and (max-width: 360px) {
-  .icecream-details div p:last-child {
+  .icecream-details div p:last-child,
+  .icecream-details div p:first-child {
     font-size: 1.2rem;
   }
 
   .myText {
     font-size: 80px;
   }
-  
-  
+
   .fruitStory h1,
   .milkStory h1,
   .sugarStory h1 {

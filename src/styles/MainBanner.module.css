@@ -533,9 +533,6 @@
   overflow: hidden;
   width: 100%;
   width: 100%;
-  /* z-index: -1; */
-  outline: 3px solid lime;
-  /* background-color: #fbe4ca; */
 }
 
 .footerMarquee {
@@ -755,7 +752,7 @@
   }
 
   .menuCard {
-    width: 20rem;
+    width: 90vw;
   }
 }
 @media screen and (max-width: 344px) {

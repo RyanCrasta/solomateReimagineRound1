@@ -1,8 +1,7 @@
-# React + Vite
+# Naturals Reimagine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Make sure you have node installed
+2. Once you have node installed run: "npm i" (that would create node_modules)
+3. Then run "npm run dev"
+4. Visit the URL mentioned in the terminal
+5. Techstack used: ReactJS, CSS, GSAP, ScrollTrigger, ThreeJS.
